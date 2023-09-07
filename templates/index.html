@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flask Test</title>
+  </head>
+  <body>
+    <h1>POST Test</h1>
+    <form enctype="multipart/form-data">
+      <input type="file" name="img">
+      <button type="submit" formmethod="post">POST</button></p>
+      {% if img_path %}
+      <div>
+        <img src="{{img_path}}" style="width:200px">
+      </div>
+      {% endif %}
+    </form>
+  </body>
+</html>

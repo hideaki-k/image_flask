@@ -5,14 +5,15 @@
     <title>Flask Test</title>
   </head>
   <body>
-    <h1>POST Test</h1>
+    <h1>Recognition Web</h1>
     <form enctype="multipart/form-data">
       <input type="file" name="img">
       <button type="submit" formmethod="post">POST</button></p>
-      {% if img_path %}
+      {% if class_name %}
       <div>
-        <img src="{{img_path}}" style="width:200px">
+      <img src="{{img_path}}" style="width:200px"> 認識結果は{{class_name}}です<BR>
       </div>
+      <HR>
       {% endif %}
     </form>
   </body>
